@@ -1,0 +1,170 @@
+/* Esto es un comentario
+
+elemento {
+    propiedad: valor;
+}
+
+*/
+
+/* Font-familiy: @font-face */
+@font-face {
+    /* un nombre para ponerle y relacionarlo luego */
+    font-family: 'roboto-general';
+    src: url("Roboto/Roboto-Bold.ttf");
+}
+
+
+
+/* Google Fontos*/
+
+p{
+    color: red;
+    font-size: 20px;
+    font-family: "roboto-general";
+
+}
+
+h1 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+section p{
+    color: yellow;
+}
+
+/* Caso de utilizar id
+*/
+#productos{
+    background-color: aqua;
+}
+
+/* Caso de utilizar clase
+*/
+.paragraph-one {
+    color: gray
+}
+
+/* Caso de directamente etiqueta
+*/
+  
+footer {
+
+    background-color: brown;
+}
+
+#test {
+    list-style-type: circle;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration-line: overline;
+    text-align: justify;
+}
+
+
+/* Unidades de medida absoluta: Como los centímetros, son fijas no importa el tipo de pantalla*/
+
+p {
+    font-size: 20px;
+    margin: 40px;
+}
+
+/* Unidades de medida relativas: */
+
+img {
+    width: 100%;
+}
+
+/* Unidades de medida rem: relativo al elemento del elemento root, es el elemento por default:
+Ejemplo: si tiene 16px y le ponemos 2 rem = 16px x 2 */
+
+a {
+    font-size: 2rem;
+}
+
+/* Unidades de medida em: Depende de la medida por deafault que le pongamos al código. La declaración de html no aplica directamente sino que da referencia para REM */
+
+html {
+    font-size: 20px;
+}
+
+p {
+    font-size: 4em;
+}
+
+
+
+
+/* Box Model:
+Primero hay un content, luego un padding, luego border y luego margin.
+El content es lo que está entre las etiquetas.
+El padding o relleno tiene 4 lados, ejemplo de ponerte muchas ropas arriba.*/
+
+div {
+    width: 400px;
+    height: 250px;
+    background-color: blue;
+    /*padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 0px;*/
+
+    /*Mismo relleno para los 4 lados*/
+    /*padding: 60px;*/
+
+
+    /*Arriba y abajo con mismo relleno y horizonalmente cada uno */
+    /*padding:200px 40px;*/
+
+    /*Los 4 lados en sentido horario*/
+    padding: 20px 40px 60px 100px;
+
+
+    /*Border: tamaño, formato del borde y color*/
+    border: 1px dotted black;
+    border-bottom: 1px solid black;
+
+    /*Margin: Margen lo mismo que padding */
+    margin: 200px;}
+    /*margin-top: ;
+    margin-bottom: ;
+    margin-left: ;
+    margin-right: ;*/
+
+
+    /*Display: nos muestra que va a ocupar en la pantalla.
+    Display inline pone el elemento en linea pero respecta el box model de los elementos internos*/
+
+    /*display: inline-block*/
+    
+    /*Display none no solo a oculta sino que la hace desaparecer, ya no ocupa lugar, no lo lee el navegador*/
+    /*display: none*/
+
+    /*Position: nos habilita los 4 lados sin ninguna restriccion previa*/
+    /*div {
+        position: relative; /* la caja se va a mover segun su posicion natural*/
+        /*tienen un valor numerico para moverlos*/
+        /*top: 80px;  se mueve 80 px para abajo de su top*/
+        /*left: 200px; se mueve 200 px para la derecha respecto de su izquierda}*/
+    
+        /*Con absolute se mueven respecto a los lados de la pantalla directamente, hay que tener cuidado porque no tiene en cuenta con otras cajas. 
+        Un caso puede ser un texto sobre imagen o video*/
+/*div{
+    position: absolute; 
+    left: 200px;
+    top: 80px;
+}*/
+
+
+/*Fixed: Deja fijo al elemento en la posicion que lo indiquemos. Por ejemplo que quede pegado arriba. El caso de uso es un navbar o el icono de whatsapp*/
+/*div{
+    position: fixed;
+    top: 0;
+}*/
+
+/*Position sticky: es como el absolute pero se activa cunado llega a la posicion de la medida que pusiste*/
+div{
+    position: sticky;
+    z-index: 1; /*PLANOS: al poner un plano positivo siempre va para adelante, si es negativo puede ser -1*/
+}
+ 

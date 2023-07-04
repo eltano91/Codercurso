@@ -1,0 +1,28 @@
+
+
+
+
+
+
+/* Flex (siempre al padre para que entienda que es flexible a nivel interno)*/
+
+section {
+    display: flex;
+    /* Flex wrap: automatiza que no desborde el body*/
+    flex-wrap: wrap;
+    
+}
+
+/* Flex direction: en este caso lo forzamos a que sea en columna*/
+
+.img-one{
+    flex-direction: column;
+}
+
+
+
+
+/* Flex Flow: unir los valores de direction y wrap*/
+.img-two{
+flex-flow: row wrap;
+}
